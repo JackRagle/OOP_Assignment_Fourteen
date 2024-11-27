@@ -12,6 +12,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws IOException{
 		Parent root = FXMLLoader.load(getClass().getResource("Format.fxml"));
 		Scene scene = new Scene(root, 750, 500);
+		String css = this.getClass().getResource("application.css").toExternalForm();
+		scene.getStylesheets().add(css);
 		primaryStage.setTitle("Unit Converter");
 		primaryStage.setScene(scene);
 		primaryStage.show();
