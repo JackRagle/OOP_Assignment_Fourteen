@@ -12,7 +12,7 @@
 	
 	<HBox spacing="5" alignment="center" 
         	GridPane.columnIndex="0" GridPane.rowIndex="0">
-        	<Text text="Welcome" id="title"
+        	<Text text="Welcome" fx:id="title"
 	        GridPane.columnIndex="1" GridPane.rowIndex="0"
 	        GridPane.columnSpan="2"/>
 	</HBox>
@@ -35,7 +35,7 @@
         	GridPane.columnIndex="0" GridPane.rowIndex="10">
         	<Label text="Amount:"
 	        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-	        <TextField id="numunits" text=""
+	        <TextField fx:id="numunits" text=""
 	        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 	</HBox>
 	
@@ -63,17 +63,17 @@
         	onAction="#handleMLTOOZButtonAction"/>
 	</HBox>
 	
-	<HBox spacing="5" alignment="center" id="results" opacity="0"
+	<HBox spacing="5" alignment="center" fx:id="results" opacity="0"
         	GridPane.columnIndex="0" GridPane.rowIndex="35">
-        	<Label text="123" id="startnum"
+        	<Label text="123" fx:id="startnum"
 	        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-	        <Label text="miles" id="startunit"
+	        <Label text="miles" fx:id="startunit"
 	        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 	        <Label text="is equal to"
 	        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-	        <Label text="456" id="endnum"
+	        <Label text="456" fx:id="endnum"
 	        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-	        <Label text="kilometers" id="endunit"
+	        <Label text="kilometers" fx:id="endunit"
 	        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 	</HBox>
 	
